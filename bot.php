@@ -15,13 +15,11 @@ function ref(){
 	return $host."?ref=262";
 }
 function head(){
-	//$user = Save('User_Agent');
-	//$cookie = Save('Cookie');
-	$cookie = "_ga=GA1.2.2132980794.1643879952; HstCfa4531111=1643879954616; HstCmu4531111=1643879954616; c_ref_4531111=https%3A%2F%2Fwww.google.com%2F; __dtsu=51A016418759290C221C93A1391ED7F8; _cc_id=ca2a8dd5148851fbf2d397321a758840; panoramaId=4ae7c0665c5035a0b8dbb880d17d16d539386ba512eac927bb16061735067c44; PHPSESSID=74c57ed3500c3a45d53585e5ad46dec8; _gid=GA1.2.1200999519.1643973488; HstCnv4531111=2; refer=262; panoramaId_expiry=1644579568496; HstCns4531111=4; _data_cpm=11-1_116-1_129-1; _data_html=1-1_11-1_26-1_55-1_93-1_116-1_129-1; _data_cpc=69-3_77-5_125-3_259-5; HstCla4531111=1643976285935; HstPn4531111=44; HstPt4531111=81; prefetchAd_4412105=true";
-	$user = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36";
+	$user = Save('User_Agent');
+	$cookie = Save('Cookie');
 	return [
 	"Host: cryptofy.club",
-    "user-agent: ".$user,
+    	"user-agent: ".$user,
 	"referer: https://cryptofy.club/Autofaucet.php",
 	"cookie: ".$cookie];
 }
